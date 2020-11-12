@@ -1,0 +1,13 @@
+<h1>All Articles</h1>
+
+
+<% @articles.each do |article| %>
+    <div class="ship">
+        <a href=<%="/articles/#{article.id}" %>> Click to read more about article <%= article.id %> </a>
+        <p>Article id: <%= article.id %>
+        <p>Article title: <%= article.title %>
+        <p>Article content: <%= article.content %>
+        </div><br>
+        <% end %> 
+
+<a href="/articles/new">Click here to post a new article!</a>
