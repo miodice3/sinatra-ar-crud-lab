@@ -9,6 +9,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    #binding.pry
+    @articles=Article.all
     #test linking pages
     erb :'articles/index'
   end

@@ -20,6 +20,7 @@ describe "Magazine App" do
       page.find(:css, "[type=submit]").click
 
       expect(Article.all.count).to eq(3)
+      #binding.pry
       expect(Article.last.title).to eq("my favorite article")
     end
 
